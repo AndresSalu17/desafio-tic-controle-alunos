@@ -40,4 +40,53 @@ public class AlunoModel {
     @NotBlank(message = "RG é obrigatório.")
     @Pattern(regexp = "^[0-9]{2}\\.?[0-9]{3}\\.?[0-9]{3}-?[0-9Xx]{1}$", message = "RG inválido")
     private String rg;
+
+    public Long getId(){
+        return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getLastName(){
+        return lastName;
+    }
+
+    public void setLastName(String lastName){
+        this.lastName = lastName;
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
+
+    public String getCpf(){
+        return cpf;
+    }
+
+    public void setCpf(String cpf){
+        this.cpf = cpf;
+    }
+
+    public String getRg(){
+        return rg;
+    }
+
+    public void setRg(String rg){
+        this.rg = rg;
+    }
+
 }
